@@ -1,4 +1,10 @@
-### Hi there 👋
+### Lava
+
+I created many projects such as HyperJet Airlines, Tide, Glacier SMP, Exiled SMP.
+Been on GitHub for around 2 years.
+
+Plugin Developer on Minecraft in java.
+I have alot of experience in coding.
 
 <!--
 **RealLava/RealLava** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
