@@ -3,7 +3,7 @@
 I created many projects such as HyperJet Airlines, Tide, Glacier SMP, Exiled SMP.
 
 
-<img src=https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png width="29px">Been on GitHub for around 2 years.
+<img src=https://cdn-icons-png.flaticon.com/512/25/25231.png width="29px"> Been on GitHub for around 2 years.
 
 Plugin Developer on Minecraft in java.
 I have alot of experience in coding.
