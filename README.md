@@ -5,7 +5,7 @@
 
 <img src=https://cdn-icons-png.flaticon.com/512/25/25231.png width="29px"> Been on GitHub for around 2 years.
 
-Plugin Developer on Minecraft in java.
+<img src=https://media.tenor.com/do1MMrPly-wAAAAi/minecraft-grass-block.gif width="29px"> Plugin Developer on Minecraft in java.
 I have alot of experience in coding.
 
 <!--
