@@ -1,14 +1,7 @@
 <h1 align="center">Lava, a developer.</h1>
 
-<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png width="29px"> I created many projects such as HyperJet Airlines, Tide, Glacier SMP, Exiled SMP.
-
+<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png width="29px"> I created many projects such as game studios.
 
 <img src=https://cdn-icons-png.flaticon.com/512/25/25231.png width="29px"> Been on GitHub for around 2 years.
 
-<img src=https://media.tenor.com/do1MMrPly-wAAAAi/minecraft-grass-block.gif width="29px"> Plugin Developer on Minecraft in java.
-I have alot of experience in coding.
-
-<img src=https://i.imgur.com/GOEfTx2.png width="29px"> Developer & Owner of Trackwork Games
-
-<img src=https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png width="29px"> [YouTube Channel](https://www.youtube.com/c/LavaAdventuresMC/)
-<h1 align="center">Just subscribe now or else.</h1>
+<img src=https://i.imgur.com/4SMiliN.png width="29px"> Developer & Owner of Trackwork Games.
