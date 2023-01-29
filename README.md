@@ -8,7 +8,7 @@
 <img src=https://media.tenor.com/do1MMrPly-wAAAAi/minecraft-grass-block.gif width="29px"> Plugin Developer on Minecraft in java.
 I have alot of experience in coding.
 
-<img src=https://raw.githubusercontent.com/github/explore/dc35ab4a9426f588b2689d76cb3ec43af019380e/topics/fabricmc/fabricmc.png width="29px"> **YEARS** of coding experience in order to be good at using the fabric api for making some minecraft mods!
+<img src=https://i.imgur.com/GOEfTx2.png width="29px"> Developer & Owner of Trackwork Games
 
 <img src=https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png width="29px"> [YouTube Channel](https://www.youtube.com/c/LavaAdventuresMC/)
 <h1 align="center">Just subscribe now or else.</h1>
