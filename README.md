@@ -4,4 +4,4 @@
 
 <img align="center" src=https://cdn-icons-png.flaticon.com/512/25/25231.png width="29px"> <h4 align="center">Been on GitHub for around 2 years.</h4>
 
-<img align="center" src=https://i.imgur.com/4SMiliN.png width="29px"> <h4 align="center">Developer & Owner of Trackwork Games.</h4>
+<img align="center-image" src=https://i.imgur.com/4SMiliN.png width="29px"> <h4 align="center">Developer & Owner of Trackwork Games.</h4>
