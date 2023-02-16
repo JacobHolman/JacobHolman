@@ -20,7 +20,7 @@ PERFORMANCE OF THIS SOFTWARE.
 
 <h1 align="center">Lava, a developer.</h1>
 
-<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png width="29px"> <h4>I created many projects such as game studios.</h4>
+<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png width="29px"> <h4>I created many projects such as roblox games.</h4>
 
 <img src=https://cdn-icons-png.flaticon.com/512/25/25231.png width="29px"> <h4>Been on GitHub for around 2 years.</h4>
 
