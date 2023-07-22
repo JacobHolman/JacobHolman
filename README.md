@@ -4,6 +4,6 @@ YouTube: youtube.com/@RealLava
 Discord: Lava#4650
 <br>
 <br>Programming languages that I know:
-<br>Java, javascript, c++, c#, lua, python, kotlin, html, css
+<br>Java, Javascript, C++, C#, Lua, Python, Kotlin, HTML, CSS, TypeScript
 
 <br>https://reallava.netlify.app/
