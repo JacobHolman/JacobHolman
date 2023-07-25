@@ -1,7 +1,7 @@
 # Java developer
 YouTube: youtube.com/@RealLava
 <br>
-Discord: Lava#4650
+Discord: lavav2
 <br>
 <br>Programming languages that I know:
 <br>Java, Javascript, C++, C#, Lua, Python, Kotlin, HTML, CSS, TypeScript
