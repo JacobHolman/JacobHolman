@@ -1,8 +1,7 @@
 # Full-stack developer
 YouTube: youtube.com/@RealLava
 <br>
-<img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" width="17"> lavav2
-
+<img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" width="17"> lavav2<br>
 <img src="https://i.imgur.com/PX4fa0w.png" width="25"> **CEO @ FastDevelopment**
 <br>
 <br>Programming languages that I know:
