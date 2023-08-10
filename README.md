@@ -1,4 +1,4 @@
-# Java developer
+# Full-stack developer
 YouTube: youtube.com/@RealLava
 <br>
 Discord: lavav2
