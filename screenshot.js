@@ -14,9 +14,12 @@ const finalPng = './latest.png';
 
 async function htmlToCroppedImage() {
   await nodeHtmlToImage({
-    output: tempPng,
+    output: './latest.png',
     html: html,
-    transparent: true
+    transparent: true,
+    puppeteerArgs: {
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    }
   });
 
   await sharp(tempPng)
