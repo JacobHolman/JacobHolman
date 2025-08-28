@@ -9,25 +9,22 @@ if (!htmlFile) {
 }
 
 const html = fs.readFileSync(htmlFile, 'utf8');
-const tempPng = './latest-raw.png';
 const finalPng = './latest.png';
 
 async function htmlToCroppedImage() {
-  await nodeHtmlToImage({
-    output: './latest.png',
+  const buffer = await nodeHtmlToImage({
     html: html,
     transparent: true,
     puppeteerArgs: {
       args: ['--no-sandbox', '--disable-setuid-sandbox']
-    }
+    },
+    encoding: 'buffer'
   });
 
-  await sharp(tempPng)
+  await sharp(buffer)
     .trim()
     .png()
     .toFile(finalPng);
-
-  fs.unlinkSync(tempPng);
 
   console.log('Cropped image saved to', finalPng);
 }
