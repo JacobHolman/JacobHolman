@@ -11,7 +11,7 @@ if (!htmlFile) {
 
 async function generateScreenshot() {
   try {
-    const filePath = `file://${path.resolve(htmlFile)}`;
+    const filePath = `file://${path.resolve(htmlFile)}?t=${Date.now()}`; // prevent caching
     const tempPath = path.join(process.cwd(), 'temp.png');
     const finalPath = path.join(process.cwd(), 'latest.png');
 
@@ -20,7 +20,11 @@ async function generateScreenshot() {
       headless: 'new',
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
+
     const page = await browser.newPage();
+
+    // Disable caching
+    await page.setCacheEnabled(false);
 
     // Set high resolution for retina-quality screenshots
     await page.setViewport({ width: 800, height: 600, deviceScaleFactor: 2 });
@@ -29,8 +33,8 @@ async function generateScreenshot() {
       document.body.style.background = 'transparent';
     });
 
-    await page.goto(filePath, { waitUntil: 'networkidle0' });
-
+    await page.goto(filePath, { waitUntil: 'networkidle0', timeout: 0, referer: '', });
+    
     const profileCard = await page.$('.profile-card');
     if (!profileCard) throw new Error('Profile card element not found');
 
