@@ -1,1 +1,1 @@
-<img src="https://raw.githubusercontent.com/JacobHolman/JacobHolman/refs/heads/main/latest.png" width="90%">
+<img src="https://raw.githubusercontent.com/JacobHolman/JacobHolman/refs/heads/main/latest.png" width="30%">
