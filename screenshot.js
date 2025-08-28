@@ -1,4 +1,4 @@
-import puppeteer from 'puppeteer';
+import puppeteer from 'puppeteer-core';
 import sharp from 'sharp';
 import fs from 'fs';
 import path from 'path';
@@ -15,9 +15,12 @@ async function generateScreenshot() {
     const tempPath = path.join(process.cwd(), 'temp.png');
     const finalPath = path.join(process.cwd(), 'latest.png');
 
-    const browser = await puppeteer.launch({ headless: 'new' });
+    const browser = await puppeteer.launch({
+    executablePath: '/usr/bin/chromium-browser',
+    headless: 'new'
+    });
     const page = await browser.newPage();
-    
+
     await page.evaluateOnNewDocument(() => {
       document.body.style.background = 'transparent';
     });
