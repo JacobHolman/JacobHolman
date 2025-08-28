@@ -2,8 +2,8 @@ name: Generate Profile Card Screenshot
 
 on:
   push:
-    paths:
-      - profile-card.html
+    branches:
+      - main
 
 jobs:
   build:
