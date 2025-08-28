@@ -22,12 +22,8 @@ async function generateScreenshot() {
     });
 
     const page = await browser.newPage();
-
-    // Disable caching
     await page.setCacheEnabled(false);
-
-    // High resolution for retina-quality screenshots
-    await page.setViewport({ width: 800, height: 600, deviceScaleFactor: 2 });
+    await page.setViewport({ width: 1200, height: 800, deviceScaleFactor: 2 });
 
     // Set light green background before rendering
     await page.evaluateOnNewDocument(() => {
@@ -39,16 +35,16 @@ async function generateScreenshot() {
     const profileCard = await page.$('.profile-card');
     if (!profileCard) throw new Error('Profile card element not found');
 
-    // Get bounding box for exact sizing
+    // Get bounding box and round coordinates
     const box = await profileCard.boundingBox();
     if (!box) throw new Error('Cannot get profile card size');
 
-    // Capture screenshot with exact size
+    // Screenshot only the profile card
     await profileCard.screenshot({
       path: tempPath,
       clip: {
-        x: box.x,
-        y: box.y,
+        x: Math.floor(box.x),
+        y: Math.floor(box.y),
         width: Math.ceil(box.width),
         height: Math.ceil(box.height)
       },
@@ -57,17 +53,9 @@ async function generateScreenshot() {
 
     await browser.close();
 
-    // Apply rounded corners and save final image
-    const radius = 24; // adjust roundness
-    const img = sharp(tempPath);
-    const metadata = await img.metadata();
-
-    const roundedCorners = Buffer.from(
-      `<svg><rect x="0" y="0" width="${metadata.width}" height="${metadata.height}" rx="${radius}" ry="${radius}"/></svg>`
-    );
-
-    await img
-      .composite([{ input: roundedCorners, blend: 'dest-in' }])
+    // Trim the green background automatically
+    await sharp(tempPath)
+      .trim() // removes solid border color
       .png()
       .toFile(finalPath);
 
