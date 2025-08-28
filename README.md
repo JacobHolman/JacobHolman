@@ -1,1 +1,1 @@
-<img src="https://raw.githubusercontent.com/JacobHolman/JacobHolman/refs/heads/main/latest.png" width="400">
+![](https://raw.githubusercontent.com/JacobHolman/JacobHolman/refs/heads/main/latest.png?s=200)
