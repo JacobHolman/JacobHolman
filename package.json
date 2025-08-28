@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
-    "puppeteer": "^21.0.0",
+    "puppeteer-core": "^24.17.0",
     "sharp": "^0.34.3"
   }
 }
