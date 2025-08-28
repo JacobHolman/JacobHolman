@@ -22,6 +22,9 @@ async function generateScreenshot() {
     });
     const page = await browser.newPage();
 
+    // Set high resolution for retina-quality screenshots
+    await page.setViewport({ width: 800, height: 600, deviceScaleFactor: 2 });
+
     await page.evaluateOnNewDocument(() => {
       document.body.style.background = 'transparent';
     });
@@ -31,25 +34,22 @@ async function generateScreenshot() {
     const profileCard = await page.$('.profile-card');
     if (!profileCard) throw new Error('Profile card element not found');
 
-    await profileCard.screenshot({
-      path: tempPath,
-      omitBackground: true
-    });
+    // Capture screenshot with transparent background
+    await profileCard.screenshot({ path: tempPath, omitBackground: true });
 
     await browser.close();
-    const img = sharp(tempPath).ensureAlpha();
-    const { data, info } = await img.raw().toBuffer({ resolveWithObject: true });
 
-    for (let i = 0; i < data.length; i += 4) {
-      const r = data[i];
-      const g = data[i + 1];
-      const b = data[i + 2];
-      if (r === 0 && g === 0 && b === 0) {
-        data[i + 3] = 0;
-      }
-    }
+    // Apply rounded corners and save final image
+    const radius = 24; // adjust for roundness
+    const img = sharp(tempPath);
+    const metadata = await img.metadata();
 
-    await sharp(data, { raw: { width: info.width, height: info.height, channels: 4 } })
+    const roundedCorners = Buffer.from(
+      `<svg><rect x="0" y="0" width="${metadata.width}" height="${metadata.height}" rx="${radius}" ry="${radius}"/></svg>`
+    );
+
+    await img
+      .composite([{ input: roundedCorners, blend: 'dest-in' }])
       .png()
       .toFile(finalPath);
 
@@ -58,7 +58,7 @@ async function generateScreenshot() {
     console.log('Screenshot saved to', finalPath);
 
   } catch (err) {
-    console.error(err.message);
+    console.error(err);
   }
 }
 
