@@ -4,7 +4,7 @@ import sharp from 'sharp';
 
 const htmlFile = process.argv[2];
 if (!htmlFile) {
-  console.error('Usage: node html-to-cropped-png.js <html-file>');
+  console.error('Usage: node screenshot.js <html-file>');
   process.exit(1);
 }
 
