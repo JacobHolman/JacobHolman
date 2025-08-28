@@ -26,25 +26,39 @@ async function generateScreenshot() {
     // Disable caching
     await page.setCacheEnabled(false);
 
-    // Set high resolution for retina-quality screenshots
+    // High resolution for retina-quality screenshots
     await page.setViewport({ width: 800, height: 600, deviceScaleFactor: 2 });
 
+    // Set light green background before rendering
     await page.evaluateOnNewDocument(() => {
-      document.body.style.background = 'transparent';
+      document.body.style.background = '#a6f3a6'; // light green
     });
 
-    await page.goto(filePath, { waitUntil: 'networkidle0', timeout: 0, referer: '', });
-    
+    await page.goto(filePath, { waitUntil: 'networkidle0', timeout: 0 });
+
     const profileCard = await page.$('.profile-card');
     if (!profileCard) throw new Error('Profile card element not found');
 
-    // Capture screenshot with transparent background
-    await profileCard.screenshot({ path: tempPath, omitBackground: true });
+    // Get bounding box for exact sizing
+    const box = await profileCard.boundingBox();
+    if (!box) throw new Error('Cannot get profile card size');
+
+    // Capture screenshot with exact size
+    await profileCard.screenshot({
+      path: tempPath,
+      clip: {
+        x: box.x,
+        y: box.y,
+        width: Math.ceil(box.width),
+        height: Math.ceil(box.height)
+      },
+      omitBackground: false
+    });
 
     await browser.close();
 
     // Apply rounded corners and save final image
-    const radius = 24; // adjust for roundness
+    const radius = 24; // adjust roundness
     const img = sharp(tempPath);
     const metadata = await img.metadata();
 
