@@ -14,7 +14,7 @@
         }
 
         body {
-            background: transparent !important;
+            background: #f5f7fa;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -24,20 +24,37 @@
         
         .profile-card {
             font-family: 'DM Sans', sans-serif;
-            background: #1e293b;
+            background: #ffffff;
             width: 100%;
-            max-width: 500px;
-            padding: 32px;
-            color: #e2e8f0;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 550px;
+            height: 320px;
+            padding: 28px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .profile-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #3b82f6 0%, #60a5fa 50%, #3b82f6 100%);
+            border-radius: 8px 8px 0 0;
         }
         
         .profile-header {
+            text-align: left;
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e5e7eb;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 24px;
         }
         
         .name-section {
@@ -45,81 +62,92 @@
         }
         
         .profile-header h1 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 4px;
+            color: #1f2937;
+            margin-bottom: 6px;
             letter-spacing: -0.01em;
         }
         
         .profile-header .title {
-            font-size: 0.95rem;
-            color: #94a3b8;
+            font-size: 1rem;
+            color: #6b7280;
             font-weight: 500;
+            margin-bottom: 0;
         }
         
         .website-link {
-            color: #60a5fa;
+            color: #3b82f6;
             text-decoration: none;
             font-size: 0.9rem;
             padding: 8px 16px;
-            background: rgba(96, 165, 250, 0.1);
-            border-radius: 6px;
+            background: rgba(59, 130, 246, 0.1);
+            border-radius: 4px;
             transition: all 0.2s ease;
-            border: 1px solid rgba(96, 165, 250, 0.2);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            display: inline-block;
+            font-weight: 500;
+            align-self: flex-start;
         }
         
         .website-link:hover {
-            background: rgba(96, 165, 250, 0.15);
-            border-color: rgba(96, 165, 250, 0.3);
+            background: rgba(59, 130, 246, 0.2);
+            border-color: rgba(59, 130, 246, 0.5);
         }
         
         .skills-section {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 20px;
+            display: flex;
+            gap: 24px;
+            flex: 1;
         }
         
         .tech-section {
-            margin-bottom: 16px;
-        }
-        
-        .tech-section:last-child {
             margin-bottom: 0;
+            flex: 1;
         }
         
         .tech-section h3 {
             font-size: 0.8rem;
             text-transform: uppercase;
-            color: #94a3b8;
-            margin-bottom: 8px;
+            color: #6b7280;
+            margin-bottom: 10px;
             letter-spacing: 0.5px;
+            font-weight: 600;
         }
         
         .skills-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 6px;
         }
         
         .skill-tag {
-            background: rgba(255, 255, 255, 0.05);
+            background: #f9fafb;
             padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            color: #e2e8f0;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            color: #374151;
             font-weight: 500;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid #e5e7eb;
             transition: all 0.2s ease;
         }
         
         .skill-tag:hover {
-            background: rgba(255, 255, 255, 0.1);
+            background: #f3f4f6;
+            border-color: #d1d5db;
             transform: translateY(-1px);
         }
         
-        @media (max-width: 480px) {
+        @media (max-width: 600px) {
             .profile-card {
-                padding: 16px;
+                padding: 20px;
+                height: auto;
+                max-width: 400px;
+            }
+            
+            .skills-section {
+                flex-direction: column;
+                gap: 16px;
             }
             
             .profile-header {
@@ -129,6 +157,20 @@
             
             .website-link {
                 align-self: flex-start;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .profile-card {
+                padding: 16px;
+            }
+            
+            .profile-header h1 {
+                font-size: 1.2rem;
+            }
+            
+            .profile-header .title {
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -153,17 +195,14 @@
                     <div class="skill-tag">TypeScript</div>
                     <div class="skill-tag">Java</div>
                     <div class="skill-tag">Python</div>
-                    <div class="skill-tag">C</div>
-                    <div class="skill-tag">C++</div>
-                    <div class="skill-tag">C#</div>
+                    <div class="skill-tag">Rust</div>
                     <div class="skill-tag">Go</div>
-                    <div class="skill-tag">Kotlin</div>
                     <div class="skill-tag">Lua</div>
                 </div>
             </div>
             
             <div class="tech-section">
-                <h3>Frontend & Frameworks</h3>
+                <h3>Frontend</h3>
                 <div class="skills-grid">
                     <div class="skill-tag">React</div>
                     <div class="skill-tag">Next.js</div>
