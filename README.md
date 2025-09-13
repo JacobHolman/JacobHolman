@@ -10,5 +10,13 @@ Backend developer passionate about technology • [jacobholman.dev](https://jaco
 
 ## GitHub Stats
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=JacobHolman&show_icons=true&theme=github_dark)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JacobHolman&layout=compact&theme=github_dark)
+<table>
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=JacobHolman&show_icons=true&theme=github_dark" alt="JacobHolman's GitHub Stats" />
+    </td>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JacobHolman&layout=compact&theme=github_dark" alt="JacobHolman's Top Languages" />
+    </td>
+  </tr>
+</table>
