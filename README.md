@@ -14,4 +14,5 @@ Backend developer focused on building scalable systems and experimenting with ne
 Here's a quick look at my open-source work and favorite languages.
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=JacobHolman&show_icons=true&theme=github_dark)
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JacobHolman&layout=compact&theme=github_dark)
