@@ -7,21 +7,30 @@ Backend developer passionate about technology
 
 ## Skills
 
-**Languages:**  
+**Languages**  
 JavaScript, TypeScript, Java, Python, C, C++, C#, Go, Kotlin, Lua
 
-**Frontend & Frameworks:**  
+**Frontend & Frameworks**  
 React, Next.js, HTML, CSS, Tailwind
 
-**Backend & Tools:**  
+**Backend & Tools**  
 Node.js, Express, MySQL, Docker, Git, AWS
 
 ---
 
 ## GitHub Stats
 
-![JacobHolman's GitHub Stats](https://github-readme-stats.vercel.app/api?username=JacobHolman&show_icons=true&hide_title=true&hide_rank=false&count_private=true&theme=github_dark)
+A quick snapshot of my open-source activity and favorite languages.
 
-![JacobHolman's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=JacobHolman&layout=compact&theme=github_dark)
+<table>
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=JacobHolman&show_icons=true&hide_title=true&hide_rank=false&count_private=true&theme=github_dark" alt="JacobHolman's GitHub Stats" />
+    </td>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JacobHolman&layout=compact&theme=github_dark" alt="JacobHolman's Top Languages" />
+    </td>
+  </tr>
+</table>
 
 ---
