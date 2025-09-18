@@ -1,7 +1,6 @@
-# Jacob Holman
+# 👋 Hi, I'm Jacob!
 
-Backend developer focused on building scalable systems and experimenting with new tech.  
-[jacobholman.dev](https://jacobholman.dev)
+I’m a backend developer who loves building scalable systems, experimenting with new tech, and figuring out how things work under the hood. Outside of coding, I’m usually tinkering with side projects, learning new frameworks, or diving into something tech-related just for fun.
 
 ## Skills
 
@@ -11,8 +10,8 @@ Backend developer focused on building scalable systems and experimenting with ne
 
 ## GitHub Stats
 
-Here's a quick look at my open-source work and favorite languages.
+I love contributing to open-source and experimenting with different languages and frameworks. Here’s a snapshot of my GitHub activity and the languages I work with most:
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=JacobHolman&show_icons=true&theme=github_dark)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=JacobHolman&show_icons=true)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JacobHolman&layout=compact&theme=github_dark)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JacobHolman&layout=compact)
